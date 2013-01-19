@@ -8,7 +8,7 @@
             shift = series.data.length > 300; 
             // add the point
             chart.series[0].addPoint(point, true, shift);
-            // call it again after 10 seconds
+            // call it again after 2 minutes
             setTimeout(requestData, 120000);    
         },
         cache: false
@@ -30,10 +30,10 @@
             }
         },
         title: {
-            text: 'Real-Time Temperature Variations in the city of Patras, Greece'
+            text: 'Real-Time Temperature Variations in the city of San Fransisco, CA'
         },
         subtitle: {
-            text: 'Data are collected from a station located at King Georges square, every 2 minutes'
+            text: 'Data are collected from a station located at NAME_OF_THE_STATION, every 2 minutes'
         },
         xAxis: {
             type: 'datetime',
