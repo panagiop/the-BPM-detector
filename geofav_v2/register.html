@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where Am I?!</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<?php include 'connect.php';?>
+	<div data-role="page" data-fullscreen="true">
+		<div data-role="header">
+			<h1>Register</h1>
+		</div>
+		<div data-role="content">
+			<form action="register.php" method="post" data-ajax="false">	
+			<table>
+				<tr><td>Username*</td><td><input type="text" id="uname" name="uname2"></td></tr>
+				<tr><td>Password*</td><td><input type="password" id="pass" name="pass2"></td></tr>
+				<tr><td>Firstname*</td><td><input type="text" id="firstname" name="firstname2"></td></tr>
+				<tr><td>Lastname*</td><td><input type="text" id="lastname" name="lastname2"></td></tr>
+				<tr><td>email*</td><td><input type="text" id="email" name="email2"></td></tr>
+				<tr><td colspan=2><input type="submit" value="Register" name="register_button" id="register">
+				</td></tr>
+				<div class="container"></div>
+			</table>
+		</form>
+	</div>
+</div>
+</body>
+</html>

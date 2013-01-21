@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where Am I?!</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<?php include 'connect.php';?>
+	<div data-role="page" data-fullscreen="true">
+		<div data-role="header">
+			<h1>Login</h1>
+		</div>
+		<div data-role="content">
+			<form action="connect.php" method="post" data-ajax="false">
+				<table>
+					<tr><td>Username*</td><td><input type="text" id="uname" name="uname"></td></tr>
+					<tr><td>Password*</td><td><input type="password" id="pass" name="pass"></td></tr>
+					<tr><td colspan=2><input type="submit" value="Login" name="login_button" id="login_button"></td></tr>
+					<div class="container"></div>
+				</table>
+			</form>
+		</div>
+		<div data-role="footer"></div>
+	</div>
+</body>
+</html>
