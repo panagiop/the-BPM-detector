@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Where Am I?!</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Where Am I?!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>

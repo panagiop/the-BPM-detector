@@ -3,21 +3,21 @@
 include_once 'connect.php';
 include_once 'val_functions.php';
 if(isset($_POST['register_button'])){
-    //sanitizing the registration's form fields
+        //sanitizing the registration's form fields
 	$uname2 = sanitizeString($_POST[uname2]);
 	$pre_pass2 = sanitizeString($_POST[pass2]);
 	$randsalt2 = randsalt();
-    $pass2 = sha1($randsalt2.$pre_pass2);
+        $pass2 = sha1($randsalt2.$pre_pass2);
 	$firstname2 = sanitizeString($_POST[firstname2]);
 	$lastname2 = sanitizeString($_POST[lastname2]);
 	$email2 = sanitizeString($_POST[email2]);
-    //validating the form fields
-    $error .= val_uname($uname2);
+        //validating the form fields
+        $error .= val_uname($uname2);
 	$error .= val_pass($pass2);
 	$error .= val_firstname($firstname2);
 	$error .= val_lastname($lastname2);
 	$error .= val_email($email2);
-    //if no error has occured ...
+        //if no error has occured ...
 	if ($error == "") {
 	$usrpost = "SELECT * FROM usr WHERE uname='$uname2'";
 	$usrquery = mysql_query($usrpost);
